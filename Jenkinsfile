@@ -17,7 +17,10 @@ pipeline {
 				}
 			}
 			stage('4-cross the street'){
-				sh 'echo "walk..."'
+				steps{
+					sh 'echo "walk..."'
+				}
+				
 			}
 		}
 } 
